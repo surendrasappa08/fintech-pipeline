@@ -1,0 +1,33 @@
+[0m18:31:10.962018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073d1940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113a3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113a39d0>]}
+
+
+============================== 18:31:10.965542 | d767277d-6e86-4563-875e-e65f143bc421 ==============================
+[0m18:31:10.965542 [info ] [MainThread]: Running with dbt=1.11.11
+[0m18:31:10.965857 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'empty': 'None', 'indirect_selection': 'eager', 'target_path': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt init fintech_dbt', 'use_experimental_parser': 'False', 'write_json': 'True', 'profiles_dir': '/Users/happie/.dbt', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'introspect': 'True', 'warn_error': 'None'}
+[0m18:31:10.974984 [debug] [MainThread]: Starter project path: /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/include/starter_project
+[0m18:31:10.980715 [info ] [MainThread]: 
+Your new dbt project "fintech_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:31:10.980969 [info ] [MainThread]: Setting up your profile.
+[0m18:31:28.584341 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m18:31:28.584725 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m18:31:28.584888 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m18:36:00.754282 [info ] [MainThread]: Profile fintech_dbt written to /Users/happie/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:36:00.831133 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 289.92795, "process_in_blocks": "0", "process_kernel_time": 0.234015, "process_mem_max_rss": "132415488", "process_out_blocks": "0", "process_user_time": 0.891812}
+[0m18:36:00.834216 [debug] [MainThread]: Command `dbt init` succeeded at 18:36:00.834000 after 289.93 seconds
+[0m18:36:00.835377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1138989d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111269f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113864e20>]}
+[0m18:36:00.837610 [debug] [MainThread]: Flushing usage events
+[0m18:36:01.101382 [debug] [MainThread]: An error was encountered while trying to flush usage events
