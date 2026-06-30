@@ -42,5 +42,6 @@ fintech-pipeline/
 ├── airflow/dags/      # Airflow DAG
 ├── docker-compose.yml # Kafka + Zookeeper
 └── .env.example       # credentials template
+
 ## Dashboard
-[Fintech Real-Time Transaction Dashboard](https://datastudio.google.com/u/1/reporting/d4a7ed12-135a-41c6-bc20-08ea68188ec)
+[Fintech Real-Time Transaction Dashboard](https://datastudio.google.com/u/1/reporting/d4a7ed12-135a-41c6-bc20-08ea68188ecf)
