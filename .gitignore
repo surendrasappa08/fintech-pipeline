@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+dbt/fintech_dbt/target/
+dbt/fintech_dbt/logs/
+dbt/logs/
+.dbt/

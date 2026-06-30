@@ -1,19 +1,21 @@
 import json
+import os
+from dotenv import load_dotenv
 from kafka import KafkaConsumer
 import snowflake.connector
 
-# Snowflake connection
+load_dotenv()
+
 conn = snowflake.connector.connect(
-    account='DU35004.us-east-2.aws',
-    user='SURENDRA08',
-    password='Surendra@080320',
-    warehouse='FINTECH_WH',
-    database='FINTECH_DB',
-    schema='TRANSACTIONS'
+    account=os.getenv('SNOWFLAKE_ACCOUNT'),
+    user=os.getenv('SNOWFLAKE_USER'),
+    password=os.getenv('SNOWFLAKE_PASSWORD'),
+    warehouse=os.getenv('SNOWFLAKE_WAREHOUSE'),
+    database=os.getenv('SNOWFLAKE_DATABASE'),
+    schema=os.getenv('SNOWFLAKE_SCHEMA')
 )
 cursor = conn.cursor()
 
-# Kafka consumer
 consumer = KafkaConsumer(
     'financial_transactions',
     bootstrap_servers='localhost:9092',
